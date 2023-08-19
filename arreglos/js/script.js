@@ -37,14 +37,12 @@ function showList(array) {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  // Escribe tu solución aquí
-    const filtro=strangeArray.filtres = typeof fun==="string";
   
-    showList(filtro);
     
-     console.log(showList());
+    const filtro = strangeArray.filter(item => typeof item === "string");
     
-    const orden=filtro.sort(a,b) => a.localCompare(b);
-
+      const orden = filtro.sort((a, b) => a.localeCompare(b));
+    
+      showList(orden);
+    });
   
-});
